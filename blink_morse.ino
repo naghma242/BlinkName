@@ -1,4 +1,4 @@
-String n = "";
+String n = "NAGHMA";
 char c;
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -215,13 +215,13 @@ void morsePrint()
 // the loop function runs over and over again forever
 void loop()
 {
-  while (n == NULL && Serial.available() == 0)
+  /*while (n == NULL && Serial.available() == 0)
   {
     Serial.println("Please enter your name");
     n = Serial.readString();
     delay(5000);
   }
-  //n = Serial.read();
+  //n = Serial.read();*/
   for (int i = 0; i < n.length(); i++)
   {
     n.toUpperCase();
